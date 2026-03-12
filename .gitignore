@@ -1,0 +1,77 @@
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Packaging & Distribution
+build/
+dist/
+*.egg
+*.egg-info/
+.installed.cfg
+wheels/
+share/python-wheels/
+
+# K8s / DevOps specific
+.kubeconfig
+kubeconfig
+config.json
+.kubefwd
+/.kind/
+.kind/
+
+# Testing & Coverage
+.coverage
+.coverage.*
+.tox/
+.nox/
+htmlcov/
+.nose/
+.hypothesis/
+cover/
+.cache
+
+# IDEs
+.vscode/
+.idea/
+.spyproject
+.spyderproject
+.ropeproject
+
+# OS Generated
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry/Pipenv/UV (if used later)
+poetry.lock
+Pipfile.lock
+uv.lock
+.pdm-python
+
+# YAML test files output
+*.out.yaml
+*.tmp.yaml
+
+# Docker
+Dockerfile.*.local
+docker-compose.override.yml

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-crashloop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-crashloop
+  template:
+    metadata:
+      labels:
+        app: nginx-crashloop
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        command: ["sh", "-c", "echo starting && exit 1"]

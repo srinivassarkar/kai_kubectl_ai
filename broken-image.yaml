@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broken-image
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: broken
+  template:
+    metadata:
+      labels:
+        app: broken
+    spec:
+      containers:
+      - name: app
+        image: nonexistent-image:latest  # This will fail to pull
+        ports:
+        - containerPort: 8080
