@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# kubectl-ai — entry point for the 'kubectl ai' command
+#
+# kubectl's plugin system works by scanning PATH for executables
+# named kubectl-<something>. When you run:
+#   kubectl ai diagnose pod nginx
+# kubectl finds 'kubectl-ai' in PATH and runs it, passing
+# 'diagnose pod nginx' as arguments. That's the entire system —
+# just a file in PATH with the right name.
+#
+# This file is identical to 'kai'. Same codebase, two entry points.
+
+from cli import app
+
+if __name__ == "__main__":
+    app()

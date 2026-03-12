@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+# kai — entry point for the 'kai' command
+#
+# The shebang (#!/usr/bin/env python3) tells the OS to run this with
+# Python 3 when executed directly. Without it, the OS doesn't know
+# what interpreter to use.
+
+from cli import app
+
+if __name__ == "__main__":
+    app()
