@@ -56,7 +56,7 @@ kubectl ai analyze cluster
 
 ```bash
 git clone https://github.com/srinivassarkar/kai_kubectl_ai.git
-cd kubectl-ai
+cd kai_kubectl_ai
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
