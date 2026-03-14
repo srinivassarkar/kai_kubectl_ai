@@ -1,4 +1,4 @@
-# kai — kubectl AI
+# kai — kubectl AI [ dont follow as it is yet - need to update the ai model and few other code ] 
 
 A local AI assistant that debugs Kubernetes for you.
 No API keys. No cloud. Runs entirely on your machine.
